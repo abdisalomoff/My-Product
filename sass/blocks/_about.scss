@@ -1,0 +1,290 @@
+.about-list {
+  padding: 150px 0px;
+}
+
+// ------------------First item------------------
+.management {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.management__content {
+  width: 100%;
+  max-width: 486px;
+}
+
+.management__headline {
+  display: block;
+  margin-top: 19px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #22343d;
+}
+
+.management__title {
+  margin-top: 8px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  color: #22343d;
+}
+
+.management__textcha {
+  display: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #22343d;
+}
+
+.management__subtite {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+  color: #22343d;
+
+  &--first {
+    display: block;
+    margin-top: 131px;
+  }
+
+  &--second {
+    display: block;
+    margin-top: 25px;
+  }
+}
+
+.management__text {
+  display: block;
+  margin-top: 12px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #22343d;
+}
+
+// ------------------Second item----------------------
+
+.customer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 150px;
+}
+
+.customer__content {
+  width: 100%;
+  max-width: 486px;
+}
+
+.customer__headline {
+  display: block;
+  margin-top: 19px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #22343d;
+}
+
+.customer__title {
+  margin-top: 8px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  color: #22343d;
+}
+
+.customer__text {
+  margin-top: 23px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #22343d;
+}
+
+.customer__list {
+  display: block;
+  margin-left: 65px;
+}
+
+.customer__item {
+  width: 100%;
+  max-width: 365px;
+  margin-top: 30px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #22343d;
+}
+
+.customer__item {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    top: 8px;
+    right: 0px;
+    bottom: 0px;
+    left: -65px;
+    background-image: url("../../images/tick1.svg");
+    background-size: 35px 35px;
+    background-repeat: no-repeat;
+    content: "";
+  }
+
+  &:nth-child(2)::after {
+    background-image: url("../../images/tick2.svg");
+  }
+
+  &:nth-child(3)::after {
+    background-image: url("../../images/tick3.svg");
+  }
+}
+
+// ------------------Three item-------------------------
+
+.collaborative {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 150px;
+}
+
+.collaborative__content {
+  width: 100%;
+  max-width: 486px;
+}
+
+.collaborative__headline {
+  display: block;
+  margin-top: 19px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #22343d;
+}
+
+.collaborative__title {
+  margin-top: 8px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  color: #22343d;
+}
+
+.collaborative__text {
+  display: block;
+
+  margin-top: 12px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #22343d;
+}
+
+.collaborative__subtite {
+  display: block;
+  margin-top: 25px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+  color: #22343d;
+}
+
+// ---------------Responsivlik----------------------------
+
+@include max-width(576px) {
+    .about-list{
+        padding: 95px 0px 81px;
+    }
+  // --------First item--------------
+
+  .management {
+    flex-direction: column;
+    flex-flow: column-reverse;
+  }
+
+  .management__img {
+    width: 349px;
+    height: 306px;
+  }
+
+  .management__headline {
+    margin-top: 50px;
+  }
+
+  .management__textcha {
+    display: block;
+    margin-top: 16px;
+  }
+
+  .management__subtite {
+    &--first {
+      margin-top: 16px;
+    }
+
+    &--second {
+      display: block;
+      margin-top: 16px;
+    }
+  }
+
+  // --------Second item---------------
+
+  .customer {
+    flex-direction: column;
+    margin: 97px auto 0px;
+  }
+
+  .customer__img {
+    width: 350px;
+    height: 292px;
+  }
+
+  .customer__headline {
+    margin-top: 50px;
+  }
+
+  .customer__text {
+    margin-top: 16px;
+  }
+
+  .customer__item {
+    margin-top: 16px;
+  }
+
+  // -----------three item----------------
+
+  .collaborative {
+    flex-direction: column;
+    flex-flow: column-reverse;
+    margin: 97px auto 0px;
+  }
+
+  .collaborative__img {
+    width: 350px;
+    height: 292px;
+  }
+
+  .collaborative__headline {
+    margin-top: 50px;
+  }
+
+  .collaborative__textcha {
+    display: block;
+    margin-top: 16px;
+  }
+
+  .collaborative__subtite {
+    &--first {
+      margin-top: 16px;
+    }
+
+    &--second {
+      display: block;
+      margin-top: 16px;
+    }
+  }
+}

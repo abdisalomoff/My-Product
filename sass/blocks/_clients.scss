@@ -1,0 +1,99 @@
+.clients__inner {
+  padding: 75px 0px;
+  text-align: center;
+}
+
+.clients__title {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 57px;
+  letter-spacing: 0.2px;
+  color: #22343d;
+}
+
+.clients__headline {
+  display: inline-block;
+  width: 100%;
+  max-width: 537px;
+  margin-top: 8px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #22343d;
+}
+
+.clients__list {
+  display: flex;
+  width: 100%;
+  max-width: 1110px;
+  margin-top: 50px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.clients__item {
+  width: 100%;
+  max-width: 327px;
+  text-align: start;
+  padding: 28px 26px 23px;
+  background: #ffffff;
+  border: 1px solid #dedede;
+  border-radius: 5px;
+}
+
+.clients__text {
+  margin-top: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  color: #737373;
+}
+
+.clients__blok {
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.clients__right {
+  margin-left: 14px;
+}
+
+.clients__name {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #02897a;
+}
+
+.clients__job {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #252b42;
+}
+
+@include max-width(576px) {
+  .clients__inner {
+    padding: 50px 0px;
+  }
+
+  .clients__headline {
+    width: 100%;
+    max-width: 323px;
+  }
+
+  .clients__list {
+    flex-direction: column;
+    margin-top: 32px;
+  }
+
+  .clients__item + .clients__item {
+    margin-top: 32px;
+  }
+}

@@ -1,0 +1,125 @@
+.process {
+  text-align: center;
+  background-image: url("../../images/process-bg-img.png");
+  background-repeat: no-repeat;
+  background-size: 2323px 390px;
+  background-position: center top;
+}
+
+.process__inner {
+  padding: 52px 0px 75px;
+}
+
+.process__title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  text-align: center;
+  color: #22343d;
+}
+
+.process__headline {
+  width: 100%;
+  max-width: 542px;
+  margin: 16px auto 0px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #22343d;
+}
+
+.process__list {
+  display: flex;
+  width: 100%;
+  max-width: 963px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 32px auto 0px;
+}
+
+.process__item {
+  display: flex;
+  align-items: center;
+}
+
+.process__item:nth-child(2) {
+  flex-flow: row-reverse;
+  margin-right: 43px;
+
+  & > .process__text {
+    margin-right: 16px;
+  }
+}
+
+.process__item:nth-child(3) {
+  flex-flow: row-reverse;
+  margin-top: 24px;
+  margin-right: 16px;
+
+  & > .process__text {
+    margin-right: 16px;
+  }
+}
+
+.process__item:nth-child(4) {
+  margin-top: 24px;
+  margin-right: 16px;
+
+  & > .process__text {
+    margin-right: 16px;
+  }
+}
+
+.process__text {
+  position: relative;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #2f281e;
+  background: #ffffff;
+  padding: 15px 25px;
+  margin-left: 16px;
+  box-shadow: 0px 2px 15px rgba(23, 58, 86, 0.1);
+  border-radius: 26.5px;
+}
+
+.process__btn {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 15px 30px;
+  margin-top: 48px;
+  color: #ffffff;
+  background-color: #02897a;
+  border-radius: 4px;
+}
+
+@include max-width(576px) {
+  .process__inner {
+    padding: 74px 0px 50px;
+  }
+
+  .process__list {
+    margin-top: 40px;
+  }
+
+  .process__item + .process__item {
+    margin-top: 32px;
+  }
+
+  .process__item:nth-child(3) {
+    flex-flow: row;
+  }
+
+  .process__item:nth-child(4) {
+    flex-flow: row-reverse;
+  }
+
+  .process__btn {
+    margin-top: 32px;
+  }
+}
