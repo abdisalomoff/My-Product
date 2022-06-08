@@ -1,0 +1,162 @@
+.product-work__inner {
+  padding: 100px 0px 115px;
+  text-align: center;
+}
+
+.product-work__title {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 51px;
+
+  color: #22343d;
+}
+
+.product-work__list {
+  margin-top: 73px;
+}
+
+.product-work__item {
+  display: flex;
+  background-image: url("../../images/mac1.png");
+  background-repeat: no-repeat;
+  background-size: 500px 280px;
+  background-position: left top;
+
+  & + .product-work__item {
+    margin-top: 100px;
+  }
+
+  &:nth-child(even) {
+    display: flex;
+    flex-flow: row-reverse;
+    background-position: right top;
+  }
+
+  &:nth-child(2) {
+    background-image: url("../../images/mac2.png");
+  }
+
+  &:nth-child(3) {
+    background-image: url("../../images/mac3.png");
+  }
+}
+
+.product-work__content {
+  padding: 35px 0px;
+  margin-left: auto;
+  width: 100%;
+  max-width: 438px;
+  text-align: start;
+}
+
+.product-work__content2 {
+  padding: 49px 0px;
+  margin-right: auto;
+  width: 100%;
+  max-width: 438px;
+  text-align: start;
+}
+
+.product-work__content3 {
+  padding: 49px 0px;
+  margin-left: auto;
+  width: 100%;
+  max-width: 438px;
+  text-align: start;
+}
+
+.product-work__head {
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #22343d;
+}
+
+.product-work__headline {
+  margin-top: 16px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  color: #22343d;
+}
+
+.product-work__text {
+  margin-top: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #22343d;
+}
+
+.product-work__btn {
+  display: inline-block;
+  padding: 11px 18px;
+  margin-top: 77px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+  background-color: #02897a;
+  border-radius: 8px;
+}
+
+@include max-width(520px) {
+  .product-work__inner {
+    padding: 96px 0px 70px;
+  }
+
+  .product-work__title {
+    font-size: 32px;
+    line-height: 48px;
+  }
+
+  .product-work__list {
+    margin-top: 79px;
+  }
+
+  .product-work__item {
+    display: flex;
+    background-image: url("../../images/mac1.png");
+    background-repeat: no-repeat;
+    background-size: 349px 195px;
+    background-position: center top;
+
+    & + .product-work__item {
+      margin-top: 79px;
+    }
+
+    &:nth-child(even) {
+      display: flex;
+      flex-flow: row-reverse;
+      background-position: center top;
+    }
+
+    &:nth-child(2) {
+      background-image: url("../../images/mac2.png");
+    }
+
+    &:nth-child(3) {
+      background-image: url("../../images/mac3.png");
+    }
+  }
+
+  .product-work__content {
+    padding: 267px 0px 0px;
+  }
+
+  .product-work__content2 {
+    padding: 263px 0px 0px;
+  }
+
+  .product-work__content3 {
+    padding: 258px 0px 0px;
+  }
+}
+
+@include max-width(420px) {
+  .product-work__item {
+    background-size: 95%;
+  }
+}

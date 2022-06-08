@@ -1,0 +1,119 @@
+.product__page {
+  display: flex;
+  background-position: left 56px;
+  background-image: url("../../images/product.png");
+  background-size: 528px 392px;
+  background-repeat: no-repeat;
+}
+
+.product__inner {
+  padding: 150px 0px 75px;
+  text-align: center;
+}
+
+.product__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 51px;
+  color: #22343d;
+}
+
+.product__list {
+  margin-top: 56px;
+  margin-left: auto;
+  width: 100%;
+  max-width: 533px;
+}
+
+.product__item {
+  text-align: start;
+
+  & + .product__item {
+    margin-top: 32px;
+  }
+}
+
+.product__headline {
+  position: relative;
+  margin-left: 54px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: #22343d;
+}
+
+.product__headline--first::after {
+  position: absolute;
+  top: -5px;
+  right: 0px;
+  bottom: -25px;
+  left: -64px;
+  background-image: url("../../images/product-icon1.svg");
+  background-size: 50px 50px;
+  background-repeat: no-repeat;
+  content: "";
+}
+
+.product__headline--second::after {
+  position: absolute;
+  top: -5px;
+  right: 0px;
+  bottom: -25px;
+  left: -64px;
+  background-image: url("../../images/product-icon2.svg");
+  background-size: 50px 50px;
+  background-repeat: no-repeat;
+  content: "";
+}
+
+.product__headline--three::after {
+  position: absolute;
+  top: -5px;
+  right: 0px;
+  bottom: -25px;
+  left: -64px;
+  background-image: url("../../images/product-icon3.svg");
+  background-size: 50px 50px;
+  background-repeat: no-repeat;
+  content: "";
+}
+
+.product__text {
+  margin-top: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  color: #22343d;
+}
+
+@include max-width(520px) {
+  .product__page {
+    display: flex;
+    flex-direction: column;
+    background-position: top center;
+    background-image: url("../../images/product-mobile-bgi.png");
+    background-size: 352px 288px;
+    background-repeat: no-repeat;
+  }
+
+  .product__inner {
+    padding: 100px 0px 75px;
+  }
+
+  .product__list {
+    margin-top: 353px;
+  }
+
+  .product__title {
+    margin-bottom: 33px;
+  }
+}
+
+@include max-width(412px){
+    .product__page{
+        background-size: 97%;
+    }
+}
