@@ -1,0 +1,70 @@
+.contact {
+  &__inner {
+    padding: 85px 0px 35px;
+    text-align: center;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 57px;
+    color: #252b42;
+  }
+
+  &__content{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+  }
+
+  &__headline {
+    display: inline-block;
+    margin: 27px auto 0px;
+    width: 100%;
+    max-width: 312px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #374754;
+  }
+
+  &__massages {
+    margin-top: 65px;
+  }
+
+  &__link + .contact__link {
+    margin-left: 22px;
+  }
+
+  &__map{
+      margin-top: 66px;
+      width: 100%;
+      max-width: 871px;
+  }
+}
+
+
+@include max-width(520px){
+    .contact__inner{
+        padding: 12px 0px 62px;
+    }
+
+    .contact__content{
+        flex-direction: column-reverse;
+    }
+
+    .contact__massages{
+        margin-top: 30px;
+    }
+
+    .contact__headline{
+        margin-top: 18px;
+    }
+
+    .contact__map{
+        margin-top: 125px;
+        border-radius: 8px;
+    }
+}

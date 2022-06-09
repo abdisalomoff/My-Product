@@ -1,0 +1,137 @@
+.business__inner {
+  display: flex;
+  align-items: center;
+  padding-top: 76px;
+  background-image: url("../../images/busines-bgi.png");
+  background-size: 541px 482px;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+.business__content {
+  padding-bottom: 78px;
+  width: 100%;
+  max-width: 535px;
+  margin-right: auto;
+}
+
+.business__title {
+  width: 100%;
+  max-width: 380px;
+  font-weight: 600;
+  font-size: 40px;
+  margin: 0;
+  line-height: 149%;
+  letter-spacing: -0.03em;
+  color: #22343d;
+}
+
+.business__text {
+  margin-top: 24px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 160%;
+  letter-spacing: -0.03em;
+  color: #22343d;
+}
+
+.business__form {
+  position: relative;
+  width: 100%;
+  max-width: 470px;
+  z-index: 1;
+}
+
+.business__input {
+  display: inline-block;
+  margin-top: 24px;
+  padding: 25px 27px;
+  width: 100%;
+  max-width: 470px;
+  border: 1px solid #eaeaea;
+  border-radius: 100px;
+  z-index: 2;
+}
+
+.business__btn {
+  position: absolute;
+  width: 100%;
+  max-width: 122px;
+  top: 33px;
+  right: 9px;
+  display: inline-block;
+  padding: 15px 21px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #ffffff;
+  border: 1px solid transparent;
+  background: #02897a;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.business__blok {
+  display: flex;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.business__link {
+  display: block;
+  margin-left: 9px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #22343d;
+}
+
+.business__color {
+  color: #02897a;
+}
+
+@include max-width(520px) {
+  .business__inner {
+    padding-top: 50px;
+    padding-bottom: 338px;
+    background-image: url("../../images/Business-mobile-bi.png");
+    background-size: 359px 264px;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+  }
+
+  .business__content {
+    text-align: center;
+    padding: 0;
+  }
+
+  .business__title {
+    font-size: 36px;
+    line-height: 149%;
+    letter-spacing: -0.03em;
+    margin: 0;
+    max-width: 500px;
+  }
+
+  .business__text {
+    margin-top: 16px;
+  }
+
+  .business__input {
+    margin-top: 19px;
+  }
+
+  .business__btn {
+    top: 28px;
+  }
+}
+
+@include max-width(411px) {
+  .business__btn {
+    top: 108px;
+    right: 33%;
+  }
+
+  .business__blok {
+    margin-top: 85px;
+  }
+}

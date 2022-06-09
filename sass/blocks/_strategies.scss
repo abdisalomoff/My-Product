@@ -33,6 +33,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .strategies__item {
@@ -41,6 +42,10 @@
   background: #ffffff;
   border-radius: 8px;
   border: 1px solid #cac7c7;
+
+  & + .strategies__item + .strategies__item + .strategies__item {
+    margin-top: 32px;
+  }
 }
 
 .strategies__img {
@@ -80,6 +85,26 @@
 .strategies__icon {
   display: block;
   margin: 64px auto 0px;
+}
+
+.strategies__link {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  color: #22343d;
+}
+
+.strategies__bottom{
+  display: flex;
+  margin-top: 32px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.strategies__circle{
+  margin-left: 8px;
 }
 
 @include max-width(576px) {

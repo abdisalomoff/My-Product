@@ -1,3 +1,11 @@
+// .header{
+//   position: fixed;
+//   background-color: #ffffff;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+// }
+
 .header__inner {
   display: flex;
   justify-content: space-between;
@@ -86,9 +94,10 @@
       top: 73px;
       right: 0px;
       width: 100%;
-      max-width: 50%;
+      max-width: 65%;
       height: 100vh;
       background-color: #02897a;
+      z-index: 2;
       transition: all 0.8s ease;
     }
   }
