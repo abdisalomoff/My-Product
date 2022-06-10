@@ -107,7 +107,7 @@
   margin-left: 8px;
 }
 
-@include max-width(576px) {
+@include max-width(520px) {
   .strategies__inner {
     padding: 50px 0px;
   }
@@ -125,6 +125,15 @@
     }
   }
 
+  .strategies__item img{
+    width: 100%;
+    max-width: 348px;
+    height: 180px;
+    // object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+
   .strategies__cardbody {
     padding: 24px 54px 40px 0px;
   }
@@ -132,4 +141,14 @@
   .strategies__icon {
     display: none;
   }
+}
+
+@include max-width(411px){
+    .strategies__item{
+      width: 100%;
+      max-width: 348px;
+    }
+
+   
+
 }
